@@ -1,0 +1,1009 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.headers .headers__wrapper {
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.headers .headers__wrapper .logo-company img {
+  width: 140px;
+}
+.headers .headers__wrapper .navbar__menu ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.headers .headers__wrapper .navbar__menu ul li a {
+  color: #4F5665;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+.headers .headers__wrapper .navbar__menu ul li a:hover, .headers .headers__wrapper .navbar__menu ul li a:active, .headers .headers__wrapper .navbar__menu ul li a:focus {
+  color: #F53838;
+}
+.headers .headers__wrapper .navbar__menu ul li:nth-child(1) {
+  margin-left: 0;
+}
+.headers .headers__wrapper .navbar__auth ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+.headers .headers__wrapper .navbar__auth ul li a {
+  color: #0B132A;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+.headers .headers__wrapper .navbar__auth ul li a:hover, .headers .headers__wrapper .navbar__auth ul li a:active, .headers .headers__wrapper .navbar__auth ul li a:focus {
+  color: #F53838;
+}
+.headers .headers__wrapper .navbar__auth ul li:nth-child(2) a {
+  color: #F53855;
+  padding: 13px 40px;
+  border: 1px solid #F53855;
+  border-radius: 50px;
+}
+
+.wrapper {
+  margin: 0 150px;
+}
+
+.wrapper-padding-l {
+  margin-left: 150px;
+}
+
+.main__container {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+.main__container .welcome__message {
+  margin-right: 40px;
+}
+.main__container .welcome__message h1 {
+  width: 520px;
+  color: #0B132A;
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 70px;
+}
+.main__container .welcome__message p {
+  width: 540px;
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.main__container .welcome__message span {
+  font-weight: bold;
+}
+.main__container .welcome__message .start-btn {
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 17px 77px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F53838;
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.5);
+  transition: 0.3s background-color;
+}
+.main__container .welcome__message .start-btn:hover, .main__container .welcome__message .start-btn:active, .main__container .welcome__message .start-btn:focus {
+  background-color: #4F5665;
+}
+
+.grid-producnts-info__container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 50px -20px rgba(13, 16, 37, 0.2);
+}
+.grid-producnts-info__container .p-info {
+  padding: 90px 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.grid-producnts-info__container .p-info .info-text {
+  margin-left: 35px;
+}
+.grid-producnts-info__container .p-info .info-text h1 {
+  color: #0B132A;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+.grid-producnts-info__container .p-info .info-text p {
+  color: #4F5665;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+}
+
+.trust__container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.trust__container .trust__message {
+  margin-left: 160px;
+}
+.trust__container .trust__message h1 {
+  width: 420px;
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 50px;
+}
+.trust__container .trust__message p {
+  width: 400px;
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.trust__container .trust__message ul {
+  margin-top: 20px;
+}
+.trust__container .trust__message ul li {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  color: #4F5665;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+}
+.trust__container .trust__message ul li img {
+  margin-right: 10px;
+}
+.trust__container .trust__message .start-btn {
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 17px 77px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F53838;
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.5);
+}
+
+.choose-your-plan__container {
+  margin-top: 210px;
+}
+.choose-your-plan__container .title-text {
+  text-align: center;
+}
+.choose-your-plan__container .title-text h1 {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 50px;
+}
+.choose-your-plan__container .title-text p {
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+
+.grid-producnts-payment__container {
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.grid-producnts-payment__container .products {
+  text-align: center;
+  margin-left: 50px;
+  padding: 90px 60px 50px 60px;
+  border-radius: 10px;
+  border: 2px solid #DDDDDD;
+}
+.grid-producnts-payment__container .products:first-child {
+  margin-left: 0;
+}
+.grid-producnts-payment__container .products:last-child {
+  border: 2px solid #F53838;
+}
+.grid-producnts-payment__container .products:last-child .footer__card .buy {
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 13px 62px;
+  border: none;
+  border-radius: 50px;
+  background-color: #F53838;
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.5);
+}
+.grid-producnts-payment__container .products .content {
+  height: 450px;
+}
+.grid-producnts-payment__container .products .content .plan {
+  margin-top: 30px;
+  color: #0B132A;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.grid-producnts-payment__container .products .content ul {
+  margin-top: 30px;
+  text-align: start;
+}
+.grid-producnts-payment__container .products .content ul li {
+  width: 190px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #4F5665;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+}
+.grid-producnts-payment__container .products .content ul li img {
+  margin-right: 20px;
+}
+.grid-producnts-payment__container .products .footer__card .payment {
+  color: #0B132A;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.grid-producnts-payment__container .products .footer__card .buy {
+  margin-top: 20px;
+  color: #F53838;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 13px 62px;
+  border: none;
+  border-radius: 50px;
+  border: 1px solid #F53838;
+  background-color: #FFFFFF;
+  transition: 0.3s background-color;
+}
+.grid-producnts-payment__container .products .footer__card .buy:hover, .grid-producnts-payment__container .products .footer__card .buy:active, .grid-producnts-payment__container .products .footer__card .buy:focus {
+  color: #DDDDDD;
+  border: none;
+  background-color: #4F5665;
+}
+
+.huge-global-network__container {
+  margin-top: 150px;
+}
+.huge-global-network__container .title-text {
+  text-align: center;
+}
+.huge-global-network__container .title-text h1 {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 50px;
+}
+.huge-global-network__container .title-text p {
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.huge-global-network__container img {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 155px;
+  text-align: center;
+}
+
+.grid-partner__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-partner__container img {
+  width: 200px;
+  margin-left: 2px;
+}
+
+.trusted-by-thousands__container {
+  margin-top: 50px;
+}
+.trusted-by-thousands__container .title-text {
+  text-align: center;
+}
+.trusted-by-thousands__container .title-text h1 {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 50px;
+}
+.trusted-by-thousands__container .title-text p {
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.trusted-by-thousands__container .reviews__cards {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trusted-by-thousands__container .reviews__cards .user_card {
+  width: 300px;
+  padding: 30px;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+}
+.trusted-by-thousands__container .reviews__cards .user_card:first-child {
+  border: 1px solid #F53838;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .user-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .user-info .user {
+  margin-left: 20px;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .user-info .user h1 {
+  color: #0B132A;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .user-info .user p {
+  color: #4F5665;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .stars {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .reviews-user-info .stars img {
+  margin-left: 10px;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .comments {
+  margin-top: 20px;
+}
+.trusted-by-thousands__container .reviews__cards .user_card .comments p {
+  color: #0B132A;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+
+.pages-list {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.pages-list .page-dots .active {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #F53838;
+}
+.pages-list .page-dots .dots {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #DDE0E4;
+}
+.pages-list .page-dots div {
+  display: inline-block;
+  margin-right: 15px;
+}
+.pages-list .next-page img:first-child {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 100%;
+  border: 1px solid #F53838;
+}
+.pages-list .next-page img:last-child {
+  width: 20px;
+  height: 20px;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: #F53838;
+}
+
+.subscribe__container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 70px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 20px 50px -20px rgba(13, 16, 37, 0.2);
+}
+.subscribe__container .title-text {
+  width: 440px;
+}
+.subscribe__container .title-text h1 {
+  color: #0B132A;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  line-height: 50px;
+}
+.subscribe__container .title-text p {
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.subscribe__container .subscribe-btn {
+  padding: 17px 60px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+  padding: 17px 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #F53838;
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.5);
+  transition: 0.3s background-color;
+}
+.subscribe__container .subscribe-btn:hover, .subscribe__container .subscribe-btn:active, .subscribe__container .subscribe-btn:focus {
+  background-color: #4F5665;
+}
+
+.footer__wrapper {
+  padding: 60px 150px 100px 150px;
+  background-color: #F8F8F8;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer .company-info .slogan {
+  width: 400px;
+  margin-top: 20px;
+  color: #4F5665;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.footer .company-info .slogan span {
+  font-weight: bold;
+}
+.footer .company-info ul {
+  margin-top: 30px;
+}
+.footer .company-info ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer .company-info ul li:last-child {
+  margin-right: 0;
+}
+.footer .company-info ul li img {
+  width: 30px;
+}
+.footer .company-info .copyright {
+  margin-top: 30px;
+  color: #AFB5C0;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Rubik", sans-serif;
+  line-height: 30px;
+}
+.footer .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer .navbar div {
+  margin-right: 120px;
+}
+.footer .navbar div:last-child {
+  margin-right: 0;
+}
+.footer .navbar .main_text {
+  color: #0B132A;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.footer .navbar ul li {
+  margin-top: 20px;
+}
+.footer .navbar ul li:first-child {
+  margin-top: 0;
+}
+.footer .navbar ul li a {
+  color: #4F5665;
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  transition: 0.3s color;
+}
+.footer .navbar ul li a:hover, .footer .navbar ul li a:active, .footer .navbar ul li a:focus {
+  color: #F53838;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__auth {
+    display: none;
+  }
+
+  .screen__content-images {
+    display: none;
+  }
+
+  .grid-producnts-info__container {
+    width: 200px;
+    margin: auto;
+    display: block;
+    padding-top: 50px;
+  }
+  .grid-producnts-info__container .p-info {
+    padding: 20px 20px;
+  }
+
+  .trust__container {
+    text-align: center;
+  }
+  .trust__container .trust__message {
+    margin-left: 0;
+  }
+  .trust__container ul li {
+    padding: 0 20px;
+  }
+
+  .choose-your-plan__container, .huge-global-network__container {
+    width: 240px;
+  }
+
+  .grid-producnts-payment__container {
+    display: block;
+  }
+  .grid-producnts-payment__container .products {
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .grid-producnts-payment__container .products:first-child {
+    margin: auto;
+  }
+
+  .grid-partner__container {
+    display: block;
+  }
+  .grid-partner__container img {
+    margin-top: 50px;
+  }
+
+  .reviews__cards {
+    display: block;
+  }
+  .reviews__cards .user_card {
+    margin-top: 50px;
+  }
+  .reviews__cards .user_card .reviews-user-info {
+    display: block;
+  }
+}
